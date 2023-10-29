@@ -3,7 +3,18 @@
 // Ti
 // p: je mag hier geen ingebouwde object methoden gebruiken, dus daar hoef je niet naar te kijken.
 
-const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+//function countCumlaudeGrades (number) {
+ //   const grades = [8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+
+
+//for (let i = 0; i < grades.length; i++) {
+//if (grades[i] > 7){
+ //   console.log(grades[i])
+//}
+//}
+
+
+
 
 /* Opdracht  1: Cum Laude */
 
@@ -11,9 +22,10 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // De administratie moet weten hoeveel studenten er dit blok cum laude zijn afgestudeerd (8 of hoger). Daar moeten namelijk speciale diploma's voor besteld worden.
 // Schrijf de stapjes om dit te kunnen checken eerst uit en vraag jezelf de volgende dingen af:
 // * Hoe kan ik iedere waarde van de array checken op deze conditie?
-// * Hoe zorg ik ervoor dat dit ook werkt wanneer de array 100 entries bevat?
+// * Hoe zorg ik ervoor dat dit ook werkt wanneer de array 100 entries bevat? .length
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
-// Log het antwoord in de terminal.
+// Log het antwoord in de terminal. console
+
 
 
 
@@ -31,8 +43,16 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
+//const grades = [8, 9, 4, 6, 10];
 
 
+//for (let i = 0; i < grades.length; i++) {
+  //  if (grades[i] > 7){
+    //    console.log(grades[i])
+    //}
+//}
+
+// grades aanpassen
 
 /* Opdracht  2: Gemiddeld cijfer */
 
@@ -44,7 +64,17 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
 // Log het antwoord in de terminal.
 
+const grades = [8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+
+//for (let i = 0; i < grades.length; i++) {
+ //   grades.sort()
+ //   console.log(grades)
+
+
+
 // ---- Verwachte uitkomst: 6.642857142857143
+
+
 
 
 /* 2b: Omschrijven tot een herbruikbare functie */

@@ -74,9 +74,9 @@ function checkEmailValidity (emailAdress){
     emailAdress.includes("@")
     if (emailAdress.includes("@")) {
         return 'true'}
-else if (emailAdress.includes(" , ")){
+else if (emailAdress.includes(",")){
     return 'false'}
-//else if (emailAdress.length-1 === ' . '){
+//else if (emailAdress.length-1 === '.'){
   //  return 'false'
     //}
 
