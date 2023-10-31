@@ -1,3 +1,5 @@
+
+
 // Je gaat functies schrijven die we kunnen hergebruiken om sommige emailadressen te checken. Nu zul je gaan merken hoe handig functies kunnen zijn!
 // Je zult hier methoden van het String Object voor nodig hebben, dus pak de paragraaf op EdHub over het String Object er even bij.
 
@@ -8,6 +10,15 @@
 // getEmailDomain("n.eeken@novi-education.nl") geeft novi-education.nl
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
+
+//function getEmailDomain(email) {
+  //  const parts = email.split('@');
+    // console.log('parts:', parts)
+
+// return parts[1];
+//}
+//console.log(getEmailDomain('a.wiersma@outlook.com'));
+
 
 
 
@@ -20,6 +31,29 @@
 // typeOfEmail("t.mellink@novi.nl") geeft geeft "Medewerker"
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
+
+//function typeOfEmail(emailAdress) {
+    //const arrayPart = emailAdress.split('@')
+
+    //if (arrayPart[1] === 'novi-education.nl') {
+      //  return 'Student';
+    //} else if (arrayPart[1] === 'novi.nl') {
+      //  return 'Medewerker';
+    //} else if (arrayPart[1] === 'outlook.com') {
+      //  return 'Extern';
+    //} else {
+    //    return 'Onbekend emailadres';
+  //  }
+//}
+
+//console.log(typeOfEmail('a.wiersma@outlook.com'));
+
+
+
+
+
+
+
 
 
 
@@ -35,3 +69,18 @@
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+
+function checkEmailValidity (emailAdress){
+    emailAdress.includes("@")
+    if (emailAdress.includes("@")) {
+        return 'true'}
+else if (emailAdress.includes(",")){
+    return 'false'}
+//else if (emailAdress.length-1 === '.'){
+  //  return 'false'
+    //}
+
+}
+
+console.log(checkEmailValidity('tessmellink , novi.nl'
+    ))
